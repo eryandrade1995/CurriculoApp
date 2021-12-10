@@ -1,0 +1,2 @@
+# CurriculoApp
+App utilizando expo
