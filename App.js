@@ -32,9 +32,9 @@ function HomeScreen ({navigation}) {
         onPress={() => navigation.navigate('Hobbies')}
       />
       <Button 
-        title="Outros"
+        title="Extras"
         color="#841584"
-        onPress={() => navigation.navigate('Outros')}
+        onPress={() => navigation.navigate('Extras')}
       />
     </View>
   );
@@ -65,17 +65,17 @@ function Hobbies ({navigation}) {
   );
 }
 
-function Outros ({navigation}) {
+function Extras ({navigation}) {
   return(
      <View style={styles.container}>
       <Text style={styles.title}>
       Atividades Extras
       </Text>
       <Text>
-        Cursos de Extensão
+        Cursos Extras
       </Text>
       <Text>
-        Trabalho Voluntario
+        Projetos Acadêmicos
       </Text>
       <Text>
         Idiomas
@@ -101,7 +101,7 @@ export default function App() {
         <Stack.Screen name="Hobbies" component={Hobbies}  options={{ title: 'Hobbies',                headerStyle:{backgroundColor:"#00FFFF"},
           headerTitleStyle:{fontWeight:'bold'} }}
         />
-        <Stack.Screen name="Outros" component={Outros}  options={{ title: 'Outros',                   headerStyle:{backgroundColor:"#00FFFF"},
+        <Stack.Screen name="Extras" component={Extras}  options={{ title: 'Extras',                   headerStyle:{backgroundColor:"#00FFFF"},
           headerTitleStyle:{fontWeight:'bold'} }}/>
       </Stack.Navigator>
     </NavigationContainer>
